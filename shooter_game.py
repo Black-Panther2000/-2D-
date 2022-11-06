@@ -125,7 +125,7 @@ while game:
         sprite_list = sprite.groupcollide(monsters, bullets, True, True)
         for i in sprite_list:
             points += 1
-            monster = Enemy('ufo.png', randint(80, win_width - 80), -20, randint(1, 7), 80, 50)
+            monster = Enemy('ufo.png', randint(80, win_width - 80), -20, randint(1, 5), 80, 50)
             monsters.add(monster)
             
         if sprite.spritecollide(player, monsters, False):
